@@ -1,0 +1,17 @@
+.form-group {
+  display: block;
+  width: 100%;
+
+  label {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 3px;
+    display: inline-block;
+  }
+
+  input[type="text"] {
+    padding: 4px 10px;
+    display: block;
+  }
+}

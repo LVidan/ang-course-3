@@ -1,0 +1,14 @@
+<fieldset>
+  <legend>First & Last Name component</legend>
+
+  <div class="form-group">
+    <label for="firstName">First & Last Name:</label>
+    <input type="text"
+        id="firstName"
+        placeholder="Add your first & last name..."
+        #info
+        (keyup)="inputValue(info.value)">
+  </div>
+
+  <h3>{{ userFirstName ? userFirstName : 'Fill the input field with information to change this message.' }}</h3>
+</fieldset>
