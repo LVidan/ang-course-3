@@ -9,7 +9,18 @@ export class BlocksComponentComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
+  initialColor: string = 'red';
+  spanCnt: string = 'HOVER CHANGE!';
+
+  changeBlock(block: any, span: any): void {
+    block.style.backgroundColor = 'green';
+    span.style.display = 'block';
+  };
+
+  revertBlock(block: any, span: any): void {
+    block.style.backgroundColor = this.initialColor;
+    span.style.display = 'none';
+  }
 }

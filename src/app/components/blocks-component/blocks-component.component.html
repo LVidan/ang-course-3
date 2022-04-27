@@ -1,1 +1,13 @@
-<p>blocks-component works!</p>
+<fieldset>
+  <legend>Block component</legend>
+
+  <div class="block" #blockOne (mouseenter)="changeBlock(blockTwo, spanTwo)" (mouseleave)="revertBlock(blockTwo, spanTwo)">
+    Block 1
+    <span #spanOne>{{ spanCnt }}</span>
+  </div>
+
+  <div class="block" #blockTwo (mouseenter)="changeBlock(blockOne, spanOne)" (mouseleave)="revertBlock(blockOne, spanOne)">
+    Block 2
+    <span #spanTwo>{{ spanCnt }}</span>
+  </div>
+</fieldset>
